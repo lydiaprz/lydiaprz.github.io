@@ -1,0 +1,49 @@
+/*
+Documento css
+    Nombre: styles.css
+    Autor: Lydia Pérez
+    Fecha: 02/12/2023
+    Descripción: Estilos de la página web
+ */
+/* paleta de colores */
+:root {
+    --color-background: #191e29;
+    --color-primary: #132d46;
+    --color-secondary: #01c38d;
+    --color-tertiary: #696e79;
+    --color-body-text: #f5f5f5;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-body-text);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+nav {
+    background-color: var(--color-background);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+

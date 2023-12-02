@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lydia Perez</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <link href="assets/js/app.js" rel="stylesheet"/>
+    <!-- portafolio Lydia Perez -->
+    <title>Portafolio Lydia Perez</title>
 </head>
+
 <body>
-<!-- Ejemplo de GitHub Pages -->
-
-<h1>Lydia Perez</h1>
-<h2>Estudiante de Desarrollo de Aplicaciones Multiplataformas</h2>
-<h3>IES Nervion</h3>
-<h4>Correo:<a href="mailto:lydiaprzglez@gmail.com"></a></h4>
-
-<div>
-    tecnologias aprendidas:
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>Java</li>
-        <li>SQL</li>
-    </ul>
-</div>
+<!-- Barra de navegacion -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Portafolio Lydia Perez</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Sobre mi</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Servicios</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="contact-page">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- Seccion de sobre mi -->
+    <div class="container" id="home">
+        <div class="content">
+            <h1>Portafolio Lydia Perez</h1>
+            <p>Desarrolladora Web</p>
+            <a href="#contact" class="button">Contacto</a>
+        </div>
+    </div>
+<!-- Seccion de servicios -->
+    <div class="container" id="services">
+        <h1 class="section__title">Servicios</h1>
+        <div class="services__container">
+            <div class="service__box">
+                <i class="fas fa-paint-brush"></i>
+                <h2 class="service__title">Desarrollo </h2>
+                <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="service__box">
+                <i class="fas fa-code"></i>
+                <h2 class="service__title">Desarrollo Web</h2>
+                <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="service__box">
+                <i class="fas fa-chart-line"></i>
+                <h2 class="service__title">Marketing</h2>
+                <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+        </div>
+    </div>
+<!-- Seccion de contacto -->
+    <div class="container" id="contact">
+        <h1 class="section__title">Contacto</h1>
+        <div class="contact__container">
+            <div>
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Informacion de contacto</h3>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <h4 class="contact__text">
+                        <a href="mailto:lydiaprzglez@gmail.com">Gmail</a>
+                    </h4>
+                    <span><i class="fas fa-phone"></i></span>
+                    <h4 class="contact__text">
+                        <a href="tel:+34 634721466">Telefono</a>
+                    </h4>
+                    <span><i class="fas fa-url"></i></span>
+                    <h4 class="contact__text">
+                        <a href="https://www.linkedin.com/in/lydia-perez-gonzalez-062564250/">Linkedin</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Pie de pagina -->
+    <footer class="footer">
+        <p class="footer__copy">&#169; Lydia Perez 2023 Todos los derechos reservados</p>
+    </footer>
 </body>
+
 </html>
