@@ -1,69 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="assets/css/styles.css" rel="stylesheet"/>
-    <link href="assets/js/app.js" rel="stylesheet"/>
-    <!-- portafolio Lydia Perez -->
-    <title>Portafolio Lydia Perez</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Lydia Pérez</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-<!-- Barra de navegacion -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Portafolio Lydia Perez</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">Sobre mi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="services-page">Servicios</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="#contact" class="button" id="contact-page">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-<!-- Seccion de sobre mi -->
 
-<!-- Seccion de servicios -->
-
-<!-- Seccion de contacto -->
-    <div class="container" id="contact">
-        <h1 class="section__title">Contacto</h1>
-        <div class="contact__container">
-            <div>
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">Informacion de contacto</h3>
-                    <span><i class="fas fa-envelope"></i></span>
-                    <h4 class="contact__text">
-                        <a href="mailto:lydiaprzglez@gmail.com">Gmail</a>
-                    </h4>
-                    <span><i class="fas fa-phone"></i></span>
-                    <h4 class="contact__text">
-                        <a href="tel:+34 634721466">Telefono</a>
-                    </h4>
-                    <span><i class="fas fa-url"></i></span>
-                    <h4 class="contact__text">
-                        <a href="https://www.linkedin.com/in/lydia-perez-gonzalez-062564250/">Linkedin</a>
-                    </h4>
-                </div>
-            </div>
+    <header>
+        <h1 id="name">Lydia Pérez</h1>
+        <div class="controls">
+            <button id="lang-toggle">EN</button>
+            <button id="theme-toggle">🌙</button>
         </div>
-    </div>
-<!-- Pie de pagina -->
-    <footer class="footer">
-        <p class="footer__copy">&#169; Lydia Perez 2023 Todos los derechos reservados</p>
+    </header>
+    <section class="about">
+        <h2 id="about-title">Sobre mí</h2>
+        <div class="about-content">
+            <img src="img/avatar.png" alt="Avatar de Lydia" class="avatar">
+            <p id="about-text">
+                Soy desarrolladora de software y QA Tester con experiencia en automatización de pruebas y ciberseguridad.  
+                Me apasiona el desarrollo de aplicaciones y la seguridad informática, combinando conocimientos de testing,  
+                análisis forense y desarrollo full stack. Mi enfoque está en crear software robusto, eficiente y seguro.  
+                Actualmente, sigo formándome en ciberseguridad y busco oportunidades para crecer en el sector IT.
+            </p>
+            <p><strong>Titulación:</strong> Desarrollo de Aplicaciones Multiplataformas</p>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2 id="contact-title">Contacto</h2>
+        <ul>
+            <li><a href="mailto:lydiaprzglez@gmail.com">📧 lydiaprzglez@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/lydiaprzglez" target="_blank">💼 LinkedIn</a></li>
+            <li><a href="https://github.com/lydiaprz" target="_blank">🐙 GitHub</a></li>
+        </ul>
+    </section>
+    
+    <section class="hero">
+        <h2 id="role">Desarrolladora & QA Tester</h2>
+        <p id="description">Apasionada por la tecnología y la ciberseguridad.</p>
+    </section>
+
+    <section class="projects">
+        <h2 id="projects-title">Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lydia Pérez</p>
     </footer>
-</body>
 
+</body>
 </html>

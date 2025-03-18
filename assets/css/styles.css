@@ -1,54 +1,119 @@
-/*
-Documento css
-    Nombre: styles.css
-    Autor: Lydia Pérez
-    Fecha: 02/12/2023
-    Descripción: Estilos de la página web
- */
-/* paleta de colores */
 :root {
-    --color-background: #191e29;
-    --color-primary: #132d46;
-    --color-secondary: #01c38d;
-    --color-tertiary: #696e79;
-    --color-body-text: #f5f5f5;
+    --bg-light: #f5f5f5;
+    --text-light: #222;
+    --bg-dark: #222;
+    --text-dark: #f5f5f5;
+    --accent: #ff5722;
 }
 
 body {
-    background-color: var(--color-background);
-    color: var(--color-body-text);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-nav {
-    background-color: var(--color-background);
-    padding: 0.5rem 1rem;
+body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+    padding: 20px;
 }
 
-a {
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-weight: bold;
+.controls button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-a:hover {
-    color: var(--color-tertiary);
-    /* animacion */
+.controls button:hover {
+    transform: scale(1.1);
 }
 
-nav ul {
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project {
+    background: rgba(255, 87, 34, 0.1);
+    padding: 15px;
+    border-left: 5px solid var(--accent);
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Modo oscuro */
+.dark-mode .project {
+    background: rgba(255, 87, 34, 0.2);
+}
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;
+}
+
+.contact ul {
     list-style: none;
+    padding: 0;
 }
 
-nav ul li {
-    margin-left: 1rem;
+.contact li {
+    margin: 10px 0;
 }
 
+.contact a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: var(--accent);
+}
+
+/* Modo oscuro */
+.dark-mode .contact a {
+    color: var(--text-dark);
+}
+
+.dark-mode .contact a:hover {
+    color: var(--accent);
+}
